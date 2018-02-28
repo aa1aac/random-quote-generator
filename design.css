@@ -1,8 +1,21 @@
-body{background-color:blue;}
+body{background-color:black;}
+.background{
+   border-style:dotted;
+  border-color:white;
+  border-radius:2px;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:5%;
+  margin-bottom:5%;
+  height:100%;
+ background-image:
+    linear-gradient(red, #f06d06);
+}
 .quote{
   padding-top:10%;
   padding-left:20%;
   padding-right:20%;
+  background-color:grey;
 }
 #quote-text{
   background-color:white;
@@ -14,7 +27,13 @@ body{background-color:blue;}
 }
 #author{
   float:right;
+  background-color:grey;
+  font-color:white;
 }
 #new-quote-btn{
  padding-left:5%;
 }
+#NewNew{
+
+}
+
