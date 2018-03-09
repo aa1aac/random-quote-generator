@@ -1,16 +1,4 @@
 body{background-color:black;}
-.background{
-   border-style:dotted;
-  border-color:white;
-  border-radius:2px;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top:5%;
-  margin-bottom:5%;
-  height:100%;
- background-image:
-    linear-gradient(red, #f06d06);
-}
 .quote{
   padding-top:10%;
   padding-left:20%;
@@ -32,8 +20,5 @@ body{background-color:black;}
 }
 #new-quote-btn{
  padding-left:5%;
-}
-#NewNew{
-
 }
 
