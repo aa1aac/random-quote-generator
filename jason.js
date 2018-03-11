@@ -7,11 +7,9 @@ colors=["rgb(0, 0, 0)",
 ]
 var body=document.querySelector("body");
 function changeColor(){
+  i=Math.floor(Math.random()*5);
  body.style.backgroundColor=colors[i];
- if (i==4){
-   i=0;
- }
- i=i+1;
+
 }
 function getQuote(){
     $.get("https://talaikis.com/api/quotes/random/")
