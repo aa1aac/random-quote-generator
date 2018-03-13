@@ -16,12 +16,13 @@ body{background-color:black;}
 #author{
   float:right;
   background-color:grey;
-  font-color:white;
+  color:white;
 }
 #new-quote-btn{
  padding-left:5%;
 }
 .background{
   margin-top:10%;
+  margin-bottom: 20%;
 }
 
