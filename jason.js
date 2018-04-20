@@ -5,10 +5,13 @@ colors=["rgb(0, 0, 0)",
 "rgb(255, 0, 128)",
 "rgb(0, 26, 255)",
 ]
-var body=document.querySelector("body");
 function changeColor(){
-  i=Math.floor(Math.random()*5);
- body.style.backgroundColor=colors[i];
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  var a = Math.random();
+  color = "rgba(" + r + "," + g + "," + b + "," + a + ")";
+  $("body").css("backgroundColor", color);
 
 }
 function getQuote(){
@@ -19,11 +22,10 @@ function getQuote(){
         changeColor();
     })
     .fail(function(){
-        console.log("Opps some error occured")
-      $("body").css("backgroundColor",colors[i]);
+        console.log("Opps some error occured");
     })
   i+=1;
   if (i<=3){i=0;}
 }
 getQuote();
-$(".btn").click(getQuote);
+$(".new").click(getQuote);
